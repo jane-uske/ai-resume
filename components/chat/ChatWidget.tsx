@@ -51,12 +51,12 @@ export function ChatWidget() {
           type="button"
           onClick={openChat}
           aria-label="打开 AI 简历助手"
-          className="fixed bottom-6 right-6 z-50 flex items-center gap-2 rounded-full bg-accent px-5 py-3.5 text-sm font-medium text-white shadow-lg transition-transform hover:scale-105"
+          className="fixed bottom-6 right-6 z-50 flex items-center gap-2 rounded-full bg-accent p-3.5 text-sm font-medium text-white shadow-lg transition-transform hover:scale-105 sm:px-5"
         >
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
           </svg>
-          问问我的简历
+          <span className="hidden sm:inline">问问我的简历</span>
         </button>
       )}
     </>
