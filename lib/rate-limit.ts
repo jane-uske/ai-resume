@@ -6,9 +6,16 @@ import { Redis } from '@upstash/redis'
 // 成本的最终兜底在 LLM 供应商侧的小额余额,不在这里。
 const UPSTASH_TIMEOUT_MS = 1000
 
-// Vercel Marketplace 的 Upstash 集成可能注入 UPSTASH_* 或 KV_*(Vercel KV 兼容)命名,两种都认
-const redisUrl = process.env.UPSTASH_REDIS_REST_URL ?? process.env.KV_REST_API_URL
-const redisToken = process.env.UPSTASH_REDIS_REST_TOKEN ?? process.env.KV_REST_API_TOKEN
+// Vercel Marketplace 的 Upstash 集成按用户设置的前缀注入变量(默认 KV,本项目实际用了 STORAGE),
+// 加上 Upstash 原生命名,三种都认
+const redisUrl =
+  process.env.UPSTASH_REDIS_REST_URL ??
+  process.env.KV_REST_API_URL ??
+  process.env.STORAGE_REST_API_URL
+const redisToken =
+  process.env.UPSTASH_REDIS_REST_TOKEN ??
+  process.env.KV_REST_API_TOKEN ??
+  process.env.STORAGE_REST_API_TOKEN
 
 const redis = redisUrl && redisToken ? new Redis({ url: redisUrl, token: redisToken }) : null
 
