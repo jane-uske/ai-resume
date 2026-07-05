@@ -22,7 +22,8 @@
 
 - **UtaNote**：已上线的微信小程序，用日语歌学日语；
 - **Remi**：线上 Web 应用，访问地址 ai.remi.run；
-- 其他公开代码可见 GitHub：github.com/jane-uske。
+- **NEON ARCADE**：霓虹像素风网页游戏厅（Vite + React），内含四款他自研的小游戏——纵版射击、炸弹人、五子棋和完整规则的中国象棋（minimax + alpha-beta 剪枝 AI），移动端全屏与刘海屏适配，线上试玩 neon-arcade-nine.remi.run；
+- 本站 ai-resume 的源码也已开源；其他公开代码可见 GitHub：github.com/jane-uske。
 
 ## 技术栈概况是怎样的？
 

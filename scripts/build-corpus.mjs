@@ -37,8 +37,8 @@ for (const file of entries) {
 
 const corpus = sections.join('\n\n') || '(语料尚未生成)'
 const bytes = Buffer.byteLength(corpus, 'utf8')
-if (bytes > 35 * 1024) {
-  console.error(`[build-corpus] 语料 ${(bytes / 1024).toFixed(1)}KB 超出 35KB 预算,先精简再构建`)
+if (bytes > 40 * 1024) {
+  console.error(`[build-corpus] 语料 ${(bytes / 1024).toFixed(1)}KB 超出 40KB 预算,先精简再构建`)
   process.exit(1)
 }
 

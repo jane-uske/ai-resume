@@ -125,6 +125,24 @@ export function ProjectsSection() {
             </Link>
           ))}
         </div>
+
+        <a
+          href="https://neon-arcade-nine.remi.run/"
+          target="_blank"
+          rel="noreferrer"
+          className="group flex flex-wrap items-center gap-x-4 gap-y-2 rounded-2xl border border-dashed border-line px-7 py-5 transition-colors hover:border-accent"
+        >
+          <span className="font-mono text-xs tracking-[0.18em] text-ink-soft">
+            SIDE QUEST
+          </span>
+          <span className="font-semibold text-ink transition-colors group-hover:text-accent">
+            NEON ARCADE
+          </span>
+          <span className="text-sm text-ink-soft">
+            霓虹像素游戏厅:四款自研小游戏(含 minimax AI 的中国象棋),移动端全屏适配
+          </span>
+          <span className="ml-auto text-sm font-medium text-accent">试玩 ↗</span>
+        </a>
       </div>
     </section>
   )
