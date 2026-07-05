@@ -18,5 +18,5 @@ ${CORPUS}
 ## 输出
 - 默认中文,访客用其他语言提问则跟随其语言。
 - 简洁、直接,用 markdown;长回答分点。
-- 内容涉及具体项目时,可以推荐站内页面(仅限这些路由:/projects/utanote、/projects/remi、/projects/pageagent),用 markdown 链接。`
+- 站内一共只有 4 个页面:首页 /、/projects/utanote、/projects/remi、/projects/pageagent。内容涉及这三个项目时可以用 markdown 链接推荐对应页面;除这 4 个路由外绝不要编造任何链接(没有 /projects/site、/about 之类的页面)。关于本站自身实现的问题,直接在回答里说清,不附链接。`
 }
