@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "corpus": "node scripts/build-corpus.mjs",
+    "predev": "node scripts/build-corpus.mjs",
+    "prebuild": "node scripts/build-corpus.mjs",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
