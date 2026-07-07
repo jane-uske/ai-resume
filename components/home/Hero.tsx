@@ -26,7 +26,7 @@ export function Hero() {
         <div className="mt-8 flex flex-wrap items-center gap-4">
           <a
             href="#projects"
-            className="rounded-full border border-ink px-5 py-2.5 text-sm font-medium text-ink transition-colors hover:bg-ink hover:text-white"
+            className="rounded-full border border-ink px-5 py-2.5 text-sm font-medium text-ink transition-colors hover:bg-ink hover:text-background"
           >
             看作品
           </a>
@@ -42,7 +42,7 @@ export function Hero() {
       </div>
 
       {/* 预演对话卡:客服 IM 工作台的质感 */}
-      <div className="rounded-2xl border border-line bg-white shadow-[0_8px_40px_rgba(13,125,112,0.08)]">
+      <div className="rounded-2xl border border-line bg-card shadow-[0_8px_40px_rgba(13,125,112,0.08)] dark:shadow-none">
         <div className="flex items-center gap-2.5 border-b border-line px-5 py-3.5">
           <span className="relative flex h-2.5 w-2.5">
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-60" />
@@ -58,7 +58,7 @@ export function Hero() {
             <button
               type="button"
               onClick={() => openChatWith('吴健是谁?用三句话介绍他。')}
-              className="max-w-[85%] rounded-2xl rounded-br-md bg-accent px-4 py-2.5 text-left text-sm leading-relaxed text-white transition-transform hover:scale-[1.02]"
+              className="max-w-[85%] rounded-2xl rounded-br-md bg-accent px-4 py-2.5 text-left text-sm leading-relaxed text-accent-ink transition-transform hover:scale-[1.02]"
             >
               吴健是谁?用三句话介绍他。
             </button>
@@ -76,7 +76,7 @@ export function Hero() {
                 key={q}
                 type="button"
                 onClick={() => openChatWith(q)}
-                className="rounded-full border border-line bg-white px-3 py-1.5 text-xs text-ink-soft transition-colors hover:border-accent hover:text-accent"
+                className="rounded-full border border-line bg-card px-3 py-1.5 text-xs text-ink-soft transition-colors hover:border-accent hover:text-accent"
               >
                 {q}
               </button>
@@ -89,7 +89,7 @@ export function Hero() {
           className="flex w-full items-center gap-2 rounded-b-2xl border-t border-line px-5 py-3.5 text-left text-sm text-ink-soft transition-colors hover:bg-surface"
         >
           <span className="flex-1">继续问下去…</span>
-          <span className="rounded-lg bg-accent px-3 py-1 text-xs font-medium text-white">
+          <span className="rounded-lg bg-accent px-3 py-1 text-xs font-medium text-accent-ink">
             开聊
           </span>
         </button>

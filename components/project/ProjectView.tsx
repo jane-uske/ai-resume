@@ -41,7 +41,7 @@ function Story({ story }: { story: StoryBlock }) {
             {story.qa.map((item) => (
               <details
                 key={item.q}
-                className="group rounded-xl border border-line bg-white open:border-accent/40"
+                className="group rounded-xl border border-line bg-card open:border-accent/40"
               >
                 <summary className="cursor-pointer list-none px-5 py-4 text-[15px] font-medium text-ink transition-colors hover:text-accent [&::-webkit-details-marker]:hidden">
                   <span className="mr-2 font-mono text-xs text-accent">Q</span>
@@ -120,7 +120,7 @@ export function ProjectView({ project }: { project: Project }) {
             ))}
           </div>
         )}
-        <div className="mt-8 rounded-2xl border border-line bg-white px-6 py-5">
+        <div className="mt-8 rounded-2xl border border-line bg-card px-6 py-5">
           <Markdown>{project.intro}</Markdown>
         </div>
       </header>

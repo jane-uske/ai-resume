@@ -1,19 +1,52 @@
 @import "tailwindcss";
 
+/* 深色模式:由 data-theme 属性驱动(layout.tsx 的 beforeInteractive 脚本在
+   首屏渲染前写入,读 localStorage 或系统偏好),而不是纯 media query,
+   这样手动切换和系统跟随可以共用一套开关。 */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
 :root {
   --background: #fcfdfd;
   --foreground: #1e2528;
+  --card: #ffffff;
+  --accent: #0d7d70;
+  --accent-soft: #e6f4f2;
+  --accent-ink: #ffffff;
+  --surface: #f4f7f7;
+  --ink: #1e2528;
+  --ink-soft: #64748b;
+  --line: #e2e8f0;
+  /* 联系区是永远的深色收尾条,不随主题切换 */
+  --contact-bg: #0d0f10;
+  --contact-ink: #f4f7f7;
+}
+
+:root[data-theme="dark"] {
+  --background: #14181a;
+  --foreground: #e7ebec;
+  --card: #1b2023;
+  --accent: #2bbfa6;
+  --accent-soft: #15302b;
+  --accent-ink: #0e1113;
+  --surface: #20262a;
+  --ink: #e7ebec;
+  --ink-soft: #98a7ad;
+  --line: #2a3134;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-accent: #0d7d70;
-  --color-accent-soft: #e6f4f2;
-  --color-surface: #f4f7f7;
-  --color-ink: #1e2528;
-  --color-ink-soft: #64748b;
-  --color-line: #e2e8f0;
+  --color-card: var(--card);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-accent-ink: var(--accent-ink);
+  --color-surface: var(--surface);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-line: var(--line);
+  --color-contact-bg: var(--contact-bg);
+  --color-contact-ink: var(--contact-ink);
   --font-sans: var(--font-geist-sans), -apple-system, "PingFang SC",
     "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
   --font-serif: "Songti SC", "Noto Serif SC", "Source Han Serif SC", "SimSun",
@@ -25,6 +58,7 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans);
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 /* 杂志式 display:宋体大标题 */
@@ -135,6 +169,9 @@ body {
   padding: 0.1em 0.35em;
   font-family: var(--font-mono);
   font-size: 0.85em;
+}
+:root[data-theme="dark"] .chat-markdown code {
+  background: rgba(255, 255, 255, 0.1);
 }
 .chat-markdown pre {
   background: #1c1917;

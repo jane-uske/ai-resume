@@ -19,7 +19,7 @@ export function MessageBubble({ message }: { message: UIMessage }) {
       <div
         className={
           isUser
-            ? 'max-w-[85%] rounded-2xl rounded-br-md bg-accent px-4 py-2.5 text-sm leading-relaxed text-white'
+            ? 'max-w-[85%] rounded-2xl rounded-br-md bg-accent px-4 py-2.5 text-sm leading-relaxed text-accent-ink'
             : 'max-w-[85%] rounded-2xl rounded-bl-md bg-surface px-4 py-2.5 text-sm leading-relaxed text-ink'
         }
       >

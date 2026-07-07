@@ -20,7 +20,7 @@ export function SuggestedChips({
           key={q}
           type="button"
           onClick={() => onPick(q)}
-          className="rounded-full border border-line bg-white px-3 py-1.5 text-xs text-ink-soft transition-colors hover:border-accent hover:text-accent"
+          className="rounded-full border border-line bg-card px-3 py-1.5 text-xs text-ink-soft transition-colors hover:border-accent hover:text-accent"
         >
           {q}
         </button>

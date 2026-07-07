@@ -65,7 +65,7 @@ export function ChatPanel() {
           </div>
         )}
         {errorHint && (
-          <div className="rounded-xl border border-amber-200 bg-amber-50 px-4 py-2.5 text-sm text-amber-800">
+          <div className="rounded-xl border border-amber-200 bg-amber-50 px-4 py-2.5 text-sm text-amber-800 dark:border-amber-800 dark:bg-amber-950 dark:text-amber-200">
             {errorHint}
           </div>
         )}
@@ -79,12 +79,12 @@ export function ChatPanel() {
             onChange={(e) => setInput(e.target.value)}
             placeholder="问点什么…"
             maxLength={2000}
-            className="min-w-0 flex-1 rounded-xl border border-line bg-white px-3.5 py-2.5 text-sm outline-none transition-colors focus:border-accent"
+            className="min-w-0 flex-1 rounded-xl border border-line bg-card px-3.5 py-2.5 text-sm outline-none transition-colors placeholder:text-ink-soft focus:border-accent"
           />
           <button
             type="submit"
             disabled={busy || !input.trim()}
-            className="shrink-0 rounded-xl bg-accent px-4 py-2.5 text-sm font-medium text-white transition-opacity disabled:opacity-40"
+            className="shrink-0 rounded-xl bg-accent px-4 py-2.5 text-sm font-medium text-accent-ink transition-opacity disabled:opacity-40"
           >
             发送
           </button>

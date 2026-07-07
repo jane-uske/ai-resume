@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { ThemeToggle } from '@/components/ThemeToggle'
 
 function SectionHeading({ eyebrow, title }: { eyebrow: string; title: string }) {
   return (
@@ -26,6 +27,7 @@ export function SiteHeader() {
           <a href="/#contact" className="transition-colors hover:text-accent">
             联系
           </a>
+          <ThemeToggle />
         </nav>
       </div>
     </header>
@@ -72,7 +74,7 @@ export function ProjectsSection() {
       <div className="grid gap-6">
         <Link
           href={`/projects/${featured.slug}`}
-          className="group rounded-2xl border border-line bg-white p-8 transition-all hover:border-accent hover:shadow-[0_8px_40px_rgba(13,125,112,0.1)] sm:p-10"
+          className="group rounded-2xl border border-line bg-card p-8 transition-all hover:border-accent hover:shadow-[0_8px_40px_rgba(13,125,112,0.1)] dark:hover:shadow-none sm:p-10"
         >
           <p className="eyebrow">{featured.kicker}</p>
           <h3 className="display mt-3 text-3xl text-ink transition-colors group-hover:text-accent sm:text-4xl">
@@ -103,7 +105,7 @@ export function ProjectsSection() {
             <Link
               key={p.slug}
               href={`/projects/${p.slug}`}
-              className="group rounded-2xl border border-line bg-white p-7 transition-all hover:border-accent hover:shadow-[0_8px_40px_rgba(13,125,112,0.1)]"
+              className="group rounded-2xl border border-line bg-card p-7 transition-all hover:border-accent hover:shadow-[0_8px_40px_rgba(13,125,112,0.1)] dark:hover:shadow-none"
             >
               <p className="eyebrow">{p.kicker}</p>
               <h3 className="display mt-3 text-2xl text-ink transition-colors group-hover:text-accent">
@@ -230,7 +232,7 @@ export function ToolkitSection() {
       <SectionHeading eyebrow="AI TOOLING" title="不止用 AI,也造 AI 工具" />
       <div className="grid gap-6 sm:grid-cols-3">
         {TOOLKIT.map((t) => (
-          <div key={t.name} className="rounded-2xl border border-line bg-white p-6">
+          <div key={t.name} className="rounded-2xl border border-line bg-card p-6">
             <h3 className="font-semibold text-ink">{t.name}</h3>
             <p className="mt-3 text-sm leading-relaxed text-ink-soft">{t.body}</p>
           </div>
@@ -279,17 +281,17 @@ export function SkillsSection() {
 
 export function ContactSection() {
   return (
-    <section id="contact" className="border-t border-line bg-ink text-white">
+    <section id="contact" className="border-t border-line bg-contact-bg text-contact-ink">
       <div className="mx-auto max-w-6xl scroll-mt-20 px-6 py-20">
         <p className="eyebrow">CONTACT</p>
         <h2 className="display mt-2 text-3xl sm:text-4xl">聊聊?</h2>
-        <p className="mt-4 max-w-xl text-[15px] leading-relaxed text-white/70">
+        <p className="mt-4 max-w-xl text-[15px] leading-relaxed text-contact-ink/70">
           想深入了解任何项目细节,右下角的 AI 助手随时在线;想直接联系本人:
         </p>
         <div className="mt-8 flex flex-wrap items-center gap-6 text-sm">
           <a
             href="mailto:nsiwsywaml@gmail.com"
-            className="rounded-full bg-white px-5 py-2.5 font-medium text-ink transition-opacity hover:opacity-90"
+            className="rounded-full bg-contact-ink px-5 py-2.5 font-medium text-contact-bg transition-opacity hover:opacity-90"
           >
             nsiwsywaml@gmail.com
           </a>
@@ -297,12 +299,12 @@ export function ContactSection() {
             href="https://github.com/jane-uske"
             target="_blank"
             rel="noreferrer"
-            className="text-white/70 underline underline-offset-4 transition-colors hover:text-white"
+            className="text-contact-ink/70 underline underline-offset-4 transition-colors hover:text-contact-ink"
           >
             github.com/jane-uske ↗
           </a>
         </div>
-        <p className="mt-16 border-t border-white/15 pt-6 font-mono text-xs tracking-wide text-white/40">
+        <p className="mt-16 border-t border-contact-ink/15 pt-6 font-mono text-xs tracking-wide text-contact-ink/40">
           此站由 Next.js + Vercel AI SDK 构建,聊天由 LLM 全文注入驱动——问 AI「这个网站怎么做的」可以看设计说明。
         </p>
       </div>
