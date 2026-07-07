@@ -145,7 +145,7 @@ export function ProjectsSection() {
         </a>
 
         <a
-          href="https://narrative-demos.vercel.app/"
+          href="https://arcade.remi.run/"
           target="_blank"
           rel="noreferrer"
           className="group flex flex-wrap items-center gap-x-4 gap-y-2 rounded-2xl border border-dashed border-line px-7 py-5 transition-colors hover:border-accent"
