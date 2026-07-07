@@ -8,9 +8,9 @@ const project: Project = {
   tags: ['实时语音', 'WebSocket', 'pgvector', '长期记忆', '多端'],
   links: [
     { label: 'GitHub', href: 'https://github.com/jane-uske/remi' },
-    { label: '线上体验', href: 'https://ai.remi.run' },
+    { label: '线上体验', href: 'https://remi-web-ivory.vercel.app/try/REMI2026' },
   ],
-  intro: `大多数 AI 聊天产品在做「更聪明的问答」，Remi 走的是另一条路：**在场感**。目标是一个跨终端、持续在线的 AI 伴侣——能听、能停顿、能接话、能被打断；有稳定的人格和跨会话的长期记忆，越聊越像「她」；有语音、表情和 3D 形象，让「她在这里」成为可感知的体验。
+  intro: `大多数 AI 聊天产品在做「更聪明的问答」，Remi 走的是另一条路：**在场感**。目标是一个跨终端、持续在线的 AI 伴侣——能听、能停顿、能接话、能被打断；有稳定的人格和跨会话的长期记忆，越聊越像「她」；有语音、表情和 3D 形象，让「她在这里」成为可感知的体验。当前线上体验采用 Vercel 托管 Web 前端，实时 WebSocket、LLM 和生图能力继续连接本地公网后端，以保留本地模型与工作流能力。
 
 这个定位决定了工程难点不在单次回复质量，而在三件事：**低延迟实时交互**、**跨会话关系记忆**、**多终端一致的存在感**。整个架构都围绕它们展开。`,
   blocks: [
@@ -68,7 +68,7 @@ const project: Project = {
 | 3D 形象 | Three.js（VRM）+ Pixi.js（Live2D） |
 | 桌面端 | Tauri v2 + React 19 + Vite（Rust 透明窗口 + 系统托盘） |
 | iOS / watchOS | Swift（SwiftUI），原生 WebSocket + 语音双工 + HealthKit |
-| 基础设施 | Clerk / JWT 认证、pino 结构化日志 + 延迟追踪、Docker Compose 部署 |`,
+| 基础设施 | Vercel 前端托管 + 本地公网后端、Clerk / JWT 认证、pino 结构化日志 + 延迟追踪、Docker Compose 部署 |`,
     },
     {
       type: 'prose',

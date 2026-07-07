@@ -75,7 +75,7 @@
 
 ## 个人项目：Remi｜AI Companion 实时陪伴系统
 
-- GitHub：jane-uske/remi ｜ 线上体验：ai.remi.run
+- GitHub：jane-uske/remi ｜ 线上体验：remi-web-ivory.vercel.app/try/REMI2026
 - 技术栈：Next.js、TypeScript、Node.js、WebSocket、PostgreSQL、pgvector、Redis（可选缓存/基础设施）、Docker
 
 Remi 是吴健独立设计并开发的 AI Companion 产品原型，围绕“跨会话关系记忆 + 实时语音陪伴”做工程化探索，解决当前 AI 聊天产品无状态、不记得用户的问题。

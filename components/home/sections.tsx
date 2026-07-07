@@ -143,6 +143,24 @@ export function ProjectsSection() {
           </span>
           <span className="ml-auto text-sm font-medium text-accent">试玩 ↗</span>
         </a>
+
+        <a
+          href="https://narrative-demos.vercel.app/"
+          target="_blank"
+          rel="noreferrer"
+          className="group flex flex-wrap items-center gap-x-4 gap-y-2 rounded-2xl border border-dashed border-line px-7 py-5 transition-colors hover:border-accent"
+        >
+          <span className="font-mono text-xs tracking-[0.18em] text-ink-soft">
+            SIDE QUEST
+          </span>
+          <span className="font-semibold text-ink transition-colors group-hover:text-accent">
+            离线档案馆
+          </span>
+          <span className="text-sm text-ink-soft">
+            六个近未来叙事解谜 Demo:从旧数据里把一个人拼回来,纯前端零依赖
+          </span>
+          <span className="ml-auto text-sm font-medium text-accent">进入 ↗</span>
+        </a>
       </div>
     </section>
   )
@@ -162,7 +180,7 @@ const EXPERIENCE = [
   {
     period: '业余 · 持续',
     org: '独立产品',
-    body: 'UtaNote(微信小程序,已上线)与 Remi(ai.remi.run)。从产品设计到后端部署全链路一人负责——上面「作品」区就是它们的工程复盘。',
+    body: 'UtaNote(微信小程序,已上线)与 Remi(Vercel 前端 + 本地公网后端)。从产品设计到后端部署全链路一人负责——上面「作品」区就是它们的工程复盘。',
   },
 ]
 
