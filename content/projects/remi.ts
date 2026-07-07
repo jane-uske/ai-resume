@@ -8,7 +8,7 @@ const project: Project = {
   tags: ['实时语音', 'WebSocket', 'pgvector', '长期记忆', '多端'],
   links: [
     { label: 'GitHub', href: 'https://github.com/jane-uske/remi' },
-    { label: '线上体验', href: 'https://remi-web-ivory.vercel.app/try/REMI2026' },
+    { label: '线上体验', href: 'https://ai.remi.run/try/REMI2026' },
   ],
   intro: `大多数 AI 聊天产品在做「更聪明的问答」，Remi 走的是另一条路：**在场感**。目标是一个跨终端、持续在线的 AI 伴侣——能听、能停顿、能接话、能被打断；有稳定的人格和跨会话的长期记忆，越聊越像「她」；有语音、表情和 3D 形象，让「她在这里」成为可感知的体验。当前线上体验采用 Vercel 托管 Web 前端，实时 WebSocket、LLM 和生图能力继续连接本地公网后端，以保留本地模型与工作流能力。
 

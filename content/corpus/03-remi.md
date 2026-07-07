@@ -1,6 +1,6 @@
 # Remi：实时 AI 陪伴系统
 
-Remi 是吴健独立设计并开发的实时 AI 陪伴系统（AI Companion），也是他架构最完整的个人项目。开源在 GitHub（[jane-uske/remi](https://github.com/jane-uske/remi)），线上体验入口是 [remi-web-ivory.vercel.app/try/REMI2026](https://remi-web-ivory.vercel.app/try/REMI2026)。当前线上体验采用 Vercel 托管 Web 前端，实时 WebSocket、LLM 和生图能力继续连接本地公网后端，以保留本地模型与工作流能力。
+Remi 是吴健独立设计并开发的实时 AI 陪伴系统（AI Companion），也是他架构最完整的个人项目。开源在 GitHub（[jane-uske/remi](https://github.com/jane-uske/remi)），线上体验入口是 [ai.remi.run/try/REMI2026](https://ai.remi.run/try/REMI2026)。当前线上体验采用 Vercel 托管 Web 前端，实时 WebSocket、LLM 和生图能力继续连接本地公网后端，以保留本地模型与工作流能力。
 
 ## 产品定位：不是"功能更多的聊天机器人"
 
